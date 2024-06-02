@@ -4,7 +4,7 @@ from django.contrib import admin
 from .models import Post, Author, Tag, Comment
 
 class PostAdmin(admin.ModelAdmin):
-    # 定义在 admin 界面中显示的字段
+    # 定义在 Post admin 界面中显示的字段
     list_display = ('title', "date", 'author')
     # 定义可用于过滤数据的字段
     list_filter = ("author", "tags", "date")
@@ -12,6 +12,7 @@ class PostAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("title",)}
 
 class CommentAdmin(admin.ModelAdmin):
+    # 定义在 Comment admin 界面中显示的字段
     list_display = ("user_name", "post")
 
 admin.site.register(Post, PostAdmin)  # 注册 Post 模型并应用 PostAdmin 设置
