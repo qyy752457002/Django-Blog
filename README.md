@@ -1,3 +1,6 @@
+![Uploading image.png…]()
+
+
 # Django - The Practical Guide
 
 This repository holds the code examples and snapshots as well as any other resources belonging to our ["Django - The Practical Guide" course](https://acad.link/django).
