@@ -49,7 +49,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'my_site.urls'
@@ -139,5 +138,3 @@ MEDIA_ROOT = BASE_DIR / "uploads"
 # 设置媒体文件URL路径前缀
 # MEDIA_URL 是媒体文件的基本URL路径，例如 '/files/'。这个路径前缀会被加在所有媒体文件的URL之前。
 MEDIA_URL = "/files/"
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
